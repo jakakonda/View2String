@@ -1,0 +1,13 @@
+﻿@page
+@using View2String.Components
+@using View2String.Services
+@model IndexModel
+@inject IViewRenderService ViewRender
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+@await Component.InvokeAsync("Test", new TestModel { StrToPrint = "Print me" })
+<br/>
+@Model.Model
