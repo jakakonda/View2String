@@ -17,7 +17,7 @@ namespace View2String.Pages
         public async Task OnGet()
         {
             Model = await _viewRender.RenderToStringAsync(
-                "/Components/Test/Default.cshtml",
+                "Test",
                 new TestModel { StrToPrint = "Print From Service" });
         }
 
